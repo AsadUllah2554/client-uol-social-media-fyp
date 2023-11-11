@@ -11,7 +11,7 @@ function App() {
   const {user, setUser} = useUserContext();
 
   useEffect(() => {
-    axios.get("/auth/login/success", { withCredentials: true }).then((res) => {
+    axios.get("https://uol-socia-media-130e4e1229f5.herokuapp.com/auth/login/success", { withCredentials: true }).then((res) => {
         console.log(res);
         if (res.data) {
           setUser(res.data.user);
