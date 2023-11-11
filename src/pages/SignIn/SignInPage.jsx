@@ -4,7 +4,7 @@ import './SignInPage.css';
 const SignInPage = () => {
 
  const google = () => {
-window.open("https://uol-socia-media-130e4e1229f5.herokuapp.com/auth/google", "_self");};
+window.open("/auth/google", "_self");};
         
     return (
         <div className="body">
